@@ -192,58 +192,6 @@ header {
 	color: var(--main-bg-col);	
 }
 
-/* TRANSLATE_BOX */
-.lang_select {
-	display: none;
-	text-transform: uppercase;
-	position: relative;
-}
-
-
-.lang_item {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	width: 70px;
-	height: 40px;
-	color: var(--main-bg-col);
-	font-size: 14px;
-	font-weight: 700;
-	padding: 14px;
-	background-color: var(--main-text-col);
-}
-
-#leng {
-	border-radius: 8px;
-}
-
-.lang_box .lang_item::after {
-	content: '';
-	width: 0;
-	height: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-top: 5px solid var(--main-bg-col);
-	transition: var(--transit);
-}
-
-.lang_list {
-	position: absolute;
-	width: 100%;
-	left: 0;
-	top: 100%;
-	visibility: hidden;
-	border-radius: 0 0 8px 8px;
-	overflow: hidden;
-}
-
-.lang_select.active .lang_list {
-	visibility: visible;
-}
-
-.lang_select.active .lang_box #leng {
-	border-radius: 8px 8px 0 0;
-}
 
 @media screen and (min-width: 1200px) {
 	.menu address {
@@ -264,11 +212,6 @@ header {
 		display: flex;
 		gap: 20px;
 	}
-
-	.lang_select {
-		display: block;
-	}
-
 	.header_icons {
 		display: flex;
 		gap: 20px;
