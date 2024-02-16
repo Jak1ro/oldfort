@@ -76,8 +76,6 @@ document.getElementById('tg').addEventListener('submit', function (e) {
         this.tel.value = '';
         this.message.value = '';
         confirmSend();
-        // success.innerHTML = 'Сообщение отправлено';
-        // success.style.display = 'block';
 		
     })
     .catch((err) => {
@@ -91,10 +89,15 @@ document.getElementById('tg').addEventListener('submit', function (e) {
 //TRANSLATE
 
 const lang = document.querySelector('.lang_select');
-const ukr = document.getElementById('leng');
-const langList = document.querySelector('.lang_list');
 
 function translateMenu() {
     lang.classList.toggle('active');
-    // langList.classList.toggle('visible');
+}
+
+// TRANSLATEMOBILE
+
+const langMob = document.querySelector('.langmob_select');
+
+function translateMenu() {
+    langMob.classList.toggle('active');
 }
