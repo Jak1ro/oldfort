@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/flickity.css">
+    <title>Юридична Сила</title>
+</head>
+<body>
+    <header class="header" id="head">
+        <div class="menu">
+            <a href="index.html" class="start">
+                <svg class="menu_logo">
+                    <use href="./img/symbols.svg#icon-vesi"></use>
+                </svg>
+            </a>
+            <a href="index.html" class="logo">"Юридична сила"</a>
+            <ul class="header_list">
+                <li class="header_item"><a href="index.html" class="header_link">Про нас</a></li>
+                <li class="header_item"><a href="index.html#our_services" class="header_link">Наші послуги</a></li>
+                <li class="header_item"><a href="index.html#consult" class="header_link">Юрист онлайн</a></li>
+                <li class="header_item"><a href="index.html#feed_back" class="header_link">Відгуки</a></li>
+                <li class="header_item"><a href="index.html#footer" class="header_link">Контакти</a></li>
+            </ul>
+            <ul class="header_icons">
+                <li><a href="viber://chat?number=380686980850" class="foot_item">
+                    <svg class="foot_icon viber">
+                        <use href="./img/symbols.svg#icon-viber"></use>
+                    </svg></a></li>
+                <li><a href="https://t.me/+380686980850" class="foot_item">
+                    <svg class="foot_icon telegram">
+                        <use href="./img/symbols.svg#icon-telegram"></use>
+                    </svg></a></li>
+                <li><a href="https://wa.me/380686980850" class="foot_item">
+                    <svg class="foot_icon whatsapp">
+                        <use href="./img/symbols.svg#icon-whatsapp"></use>
+                    </svg></a>
+                </li>
+            </ul>
+            <address>
+                <a href="tel:+380737770222">+38 (073) 777-0-222</a>
+                <a href="tel:+380686980850">+38 (068) 698-0-850</a>
+            </address>
+            <!-- <div class="burger">
+            </div> -->
+            <input id="burger" type="checkbox" class="menucheck">
+            <label for="burger" class="navburger"></label>
+            <ul class="burger_list">
+                <li class="burger_item"><a href="index.html" class="burger_link" onclick='brgrSwitch()'>Про нас</a></li>
+                <li class="burger_item"><a href="index.html#our_services" class="burger_link" onclick='brgrSwitch()'>Наші послуги</a></li>
+                <li class="burger_item"><a href="index.html#consult" class="burger_link" onclick='brgrSwitch()'>Юрист онлайн</a></li>
+                <li class="burger_item"><a href="index.html#feed_back" class="burger_link" onclick='brgrSwitch()'>Відгуки</a></li>
+                <li class="burger_item"><a href="index.html#footer" class="burger_link" onclick='brgrSwitch()'>Контакти</a></li>
+                <li class="burger_icons">
+                    <ul class="icon_list">
+                        <li><a href="viber://chat?number=380686980850" class="foot_item">
+                            <svg class="foot_icon viber">
+                                <use href="./img/symbols.svg#icon-viber"></use>
+                            </svg></a></li>
+                        <li><a href="https://t.me/+380686980850" class="foot_item">
+                            <svg class="foot_icon telegram">
+                                <use href="./img/symbols.svg#icon-telegram"></use>
+                            </svg></a></li>
+                        <li><a href="https://wa.me/380686980850" class="foot_item">
+                            <svg class="foot_icon whatsapp">
+                                <use href="./img/symbols.svg#icon-whatsapp"></use>
+                            </svg></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="burger_phone">
+                    <a href="mailto:yursyla.od@gmail.com" class="burger_link">yursyla.od@gmail.com</a>
+                    <a href="tel:+380737770222" class="burger_link">+38 (073) 777-0-222</a>
+                    <a href="tel:+380686980850" class="burger_link">+38 (068) 698-0-850</a>
+                </li>
+            </ul>
+        </div>
+        </header>
+        <!-- dasj;lkasd;ljkdas;ljkasd;ljk;ljkasd;ljkasd -->
+        <div class="wrapper work_time">
+            <div class="time_table">
+                <div class="time_head">
+                    <svg class="time_call">
+                        <use href="./img/symbols.svg#icon-phone"></use>
+                    </svg>
+                    <div class="svg_text">
+                        <p class="time_text">Хочете отримати професійну допомогу?<br>Телефонуйте або напишіть нам з 8:00 до 22:00 щодня.</p>
+                    </div>
+                </div>
+                <div class="time_list">
+                    <div class="time_item">
+                        <a href="mailto:yursyla.od@gmail.com" class="time_post">yursyla.od@gmail.com</a>
+                    </div>
+                    <div class="time_item phones">
+                        <a href="tel:+380737770222" class="time_phone">+38 (073) 777-0-222</a>
+                        <a href="tel:+380686980850" class="time_phone">+38 (068) 698-0-850</a>
+                    </div>
+                    <a type="button" class="light_btn time_btn" onclick="modalOpen()">отримати допомогу</a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="aboutpage">
+                <h2 class="about_company">Пенсійні спори</h2>
+                <!-- <h2 class="about_company">Питання, з якими до нас звертаються найчастіше:</h2>
+                <p class="text_standart">Юридична сила - молода українська компанія, яка була заснована в місті Одесі фахівцями <span>з багаторічним досвідом роботи у сфері юриспруденції</span>. Над створенням компанії працювали найкращі уми з усіх куточків нашої кра-їни. Ми зібрали справжніх "акул" у сфері права, які стоятимуть на боці наших клієнтів!</p>
+                <p class="text_standart">«Юридична Сила» створена в 2020 році. На сьогоднішній день, компа-нію представляють більше ніж 15 талановитих юристів, сфера практичної дія-льності яких охоплює всі галузі права.</p>
+                <p class="text_standart"><span>Наша компанія надає професійні та доступні послуги у сфері юрис-пруденції.</span></p>
+                <p class="text_standart">Вчасна юридична допомога — це важливо! Ми намагаємося надавати послуги адвокатів якнайшвидше, щоб не витрачати час своїх клієнтів. Вже
+                за 15 хвилин після звернення, у робочі години, ви отримаєте первинну юри-дичну поміч та відповіді на свої запитання.</p>
+                 -->
+                 <p class="about_head_text">Питання, з якими до нас звертаються найчастіше:</p>
+                 <p class="about_red_text">1. Військові пенсії:</p>
+                 <ul class="about_list">
+                    <li class="about_list_item">Повернення надбавок і премій;</li>
+                    <p class="about_list_item under_text">Збільшення пенсії в 2 рази за рахунок повернення до складу грошового забез-печення надбавок і премій.</p>
+                    <li class="about_list_item">Збільшення пенсій у зв'язку з втратою годувальника;</li>
+                    <p class="about_list_item under_text">Всі, хто отримують пенсію у зв'язку з втратою годувальника (у разі отримання військової пенсії), отримують її на 50% менше, тому що з пенсії забрали над-бавки і премії.</p>
+                    <li class="about_list_item">Збільшення % від грошового забезпечення;</li>
+                    <p class="about_list_item under_text">Пенсіонери, які мають стаж понад 27 років під час звільнення мають право збільшити свій % від грошового забезпечення.</p>
+                    <li class="about_list_item">Повернення заборгованості з 01.01.2018 року;</li>
+                    <p class="about_list_item under_text">Відсуджуємо заборгованість від 40 000 гривень за надбавками.</p>
+                    <li class="about_list_item">Компенсація за невикористану відпустку АТО;</li>
+                    <p class="about_list_item under_text">Усі, хто не використав відпустку перебуваючи в зоні АТО, мають право отри-мати за неї компенсацію.</p>
+                    <li class="about_list_item">Компенсація по інвалідності;</li>
+                    <p class="about_list_item under_text">Після отримання інвалідності, у зв'язку з проходженням військової служби, не всі отримали свою законну компенсацію.</p>
+                 </ul>
+                 <p class="about_red_text">2. Цивільні пенсії:</p>
+                 <ul class="about_list">
+                    <li class="about_list_item">Перерахунок пенсій;</li>
+                    <li class="about_list_item">Зарахування стажу;</li>
+                    <li class="about_list_item">Нарахування пенсії на пільгових умовах;</li>
+                    <p class="about_list_item under_text">Ті, хто працює з особливо шкідливими і важкими умовами праці, мають право на призначення пенсії на пільгових умовах.</p>
+                    <li class="about_list_item">Збір пакету документів;</li>
+                    <li class="about_list_item">Юридичний супровід;</li>
+                 </ul>
+                 <p class="about_text_bold">Ми працюємо з усіма справами та надаємо широкий спектр послуг з пенсійного права, які допоможуть захистити ваші інтереси!</p>
+                 <p class="about_red_text">Ми гарантуємо:</p>
+                 <ul class="about_list">
+                    <li class="about_list_item">Професіоналізм, якість, швидкість, та ефективність наданих послуг;</li>
+                    <li class="about_list_item">Роботу зі всіма питаннями пов’язаними зі сферою пенсійного права;</li>
+                    <li class="about_list_item">Реальний успішний та ефективний досвід розв’язування питань, пов’язаних з відстоюванням прав наших клієнтів;</li>
+                    <li class="about_list_item">Постійний зв’язок. Клієнти на зв’язку зі своїм спеціалістом 24/7 та отримують звіт виконаної роботи.</li>
+                    <li class="about_list_item">Збережений час та нерви на оформлення та перевірку правомірності нарахування пенсій.</li>
+                    <li class="about_list_item">Економію ваших коштів, адже чималу кількість питань можна розв’язати просто під час безкоштовної онлайн консультації юриста, а ціна послуг пенсійного адвоката далі — розумна та виважена.</li>
+                 </ul>
+            </div>
+        </div>
+        <div class="wrapper accord">
+            <div class="aboutpage_accordeon">
+                <h3 class="accord_head">Поширені запитання</h3>  
+                    <div class="accordeon_page">
+                        <input class="accord_inp" type="radio" name="radio" id="radio1" checked="checked">
+                        <label class="accord_lab" for="radio1">
+                            Чи допоможе мені адвокат із пенсійних справ, якщо я не можу на-дати до Пенсійного Фонду довідку з місця роботи?
+                        </label>
+                        <div class="accordeon_text">
+                            <p class="text_standart">Так, ми працюємо з громадянами, які не можуть надати Пенсійному Фонду повний пакет документів для нарахування пенсії за віком. Наші фа-хівці зроблять запити до архівів та допоможуть вам підготувати документи для отримання правильної та повної пенсії за віком.</p>
+                        </div>
+                        <input class="accord_inp" type="radio" name="radio" id="radio2">
+                        <label class="accord_lab" for="radio2">
+                            Чи можете ви допомогти з нарахуванням пенсії по інвалідності (МСЕК призначив мені 3 групу, хоча за моїм діагнозом має бути 2)?
+                        </label>
+                        <div class="accordeon_text">
+                            <p class="text_standart">Сьогодні проблеми нарахування пенсій через втрату дієздатності дуже актуальні. Звертайтеся до наших пенсійних адвокатів, і ми допомо-жемо вам відновити справедливість.</p>
+                        </div>
+                        <input class="accord_inp" type="radio" name="radio" id="radio3">
+                        <label class="accord_lab" for="radio3">
+                            Чи дорого коштує послуга пенсійного юриста?
+                        </label>
+                        <div class="accordeon_text">
+                            <p class="text_standart">У нашій компанії ми дотримуємось лояльної цінової політики. Крім того, ви можете отримати первинну безкоштовну консультацію адвоката лише зателефонувавши нам.</p>
+                        </div>
+                        <input class="accord_inp" type="radio" name="radio" id="radio4">
+                        <label class="accord_lab" for="radio4">
+                            Чи надаєте ви допомогу пенсійного адвоката віддалено, якщо клі-єнт не може прийти до вас?
+                        </label>
+                        <div class="accordeon_text">
+                            <p class="text_standart">Так, ми допомагаємо своїм клієнтам у різних форматах. Якщо клієнт не може особисто приїхати на консультацію, ми можемо домовитися про виїзд нашого спеціаліста або провести консультацію онлайн.</p>
+                        </div>
+                    </div>           
+            </div>
+        </div>
+        <!-- dasj;lkasd;ljkdas;ljkasd;ljk;ljkasd;ljkasd -->
+        <footer>
+			<div class="adr_list" id="footer">
+				<div class="foot_text">
+					<h2>"Юридична сила"</h2>
+				<p>Ви можете приїхати до нас особисто і ми обговоримо на місці всі необхідні питання, які потребують негайного вирішення!</p>
+				</div>
+				<div class="foot_adress">
+					<address class="foot_adr">
+						<a href="tel:+380737770222">+38 (073) 777-0-222</a>
+						<a href="tel:+380686980850">+38 (068) 698-0-850</a>
+					</address>
+					<div class="foot_links">
+						<ul class="foot_list">
+							<!-- <li><a href="viber:add//?number=380686980850" class="foot_item"> -->
+							<li><a href="viber://chat?number=380686980850" class="foot_item">
+								<svg class="foot_icon viber">
+									<use href="./img/symbols.svg#icon-viber"></use>
+								</svg>
+							</a></li>
+							<!-- <li><a href="tg://resolve?domain=@ghostofkyiv777" class="foot_item"> -->
+							<li><a href="https://t.me/+380686980850" class="foot_item">
+								<svg class="foot_icon telegram">
+									<use href="./img/symbols.svg#icon-telegram"></use>
+								</svg>
+							</a></li>
+							<li><a href="https://wa.me/380686980850" class="foot_item">
+								<svg class="foot_icon whatsapp">
+									<use href="./img/symbols.svg#icon-whatsapp"></use>
+								</svg>
+							</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+        <div class="help_back" id="help_back">
+            <div id="form" class="help_form" >
+                <form id="tg" class="help_group">
+                    <input type="text" name="name" placeholder="Введіть П.І.Б." class="help_input">
+                    <input type="tel" name="tel" placeholder="Введіть телефон" class="help_input" pattern="[\+]\d{2}\[\(]\d{3}[\)]\\d{3}\d{2}\d{2}" minlength="5" maxlength="19" required>
+                    <textarea name="message" rows="4" maxlength="500" placeholder="Коротко опишіть проблему" class="help_area"></textarea>
+                    <!-- <div id="success" class="alert" style="display: block">Сообщение отправлено</div> -->
+                    <span class="help_span">
+                        <input type="submit" value="Відправити" class="light_btn">
+                    </span>
+                    <!-- без заголовка -->
+                </form>
+                <div class="help_exit" onclick="modalClose()"></div>
+            </div>
+        </div>
+        <!-- CONFIRM WONDOW -->
+		<div class="confirm" id="confirm">
+			<div class="confirm_field">
+				<p class="confirm_msg">Дякуємо Вам за довіру!
+				</p>
+				<p class="confirm_msg">Очікуйте дзвінок протягом 15 хвилин.</p>
+				<a href="#head" class="confirm_link" onclick="unConfirmSend()">На головну</a>
+			</div>
+		</div>
+      <!-- ОТПРАВКА ФОРМЫ  -->
+	<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+	<!-- ОСНОВНЫЕ ДЕЙСТВИЯ  -->
+	<!-- <script src="script.js"></script> -->
+    <script src="./js/secondary.js"></script>
+	<!-- ПРОКРУТКА ОТЗЫВОВ  -->
+	<!-- <script src="./js/flickity.pkgd.js"></script> -->
+</body>
+</html>
