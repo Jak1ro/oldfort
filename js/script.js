@@ -98,6 +98,6 @@ function translateMenu() {
 
 const langMob = document.querySelector('.langmob_select');
 
-function translateMenu() {
+function translateMenuMob() {
     langMob.classList.toggle('active');
 }
