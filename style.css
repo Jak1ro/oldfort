@@ -61,7 +61,8 @@ header, .hero, .wrapper, footer {
 .feed_back,
 .aboutpage,
 .aboutpage_accordeon,
-.time_table {
+.time_table,
+.fblank {
 	max-width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -77,7 +78,7 @@ header, .hero, .wrapper, footer {
 .aboutpage_accordeon,
 .time_table {
 	padding-top: 80px;
-	padding-bottom: 40px;
+	padding-bottom: 80px;
 }
 
 .wrapper {
@@ -1283,4 +1284,52 @@ footer {
 	font-size: 22px;
 	text-align: center;
 	margin-bottom: 20px;
+}
+
+/* FORM_BLANK */
+
+.form_blank {
+	background-color: var(--main-bg-col);
+}
+
+.fblank {
+
+}
+
+.fblank_form {
+	display: flex;
+	flex-direction: column;
+	padding: 80px 0 40px;
+}
+
+.fblank_inp, .fblank_area {
+	width: 100%;
+	outline: none;
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid var(--sec-text-col);
+	padding: 20px 0;
+	background-color: transparent;
+	font-size: 20px;
+	color: var(--sec-text-col);
+}
+
+.form_blank {
+	outline: none;
+}
+
+.fblank_area {
+	resize: none;
+	width: 100%;
+}
+
+.fblank_span {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+
 }
