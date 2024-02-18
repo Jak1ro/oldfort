@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="./css/flickity.css">
     <title>Юридична Сила</title>
 </head>
@@ -12,16 +12,16 @@
         <div class="menu">
             <a href="index.html" class="start">
                 <svg class="menu_logo">
-                    <use href="./img/symbols.svg#icon-vesi"></use>
+                    <use href="../img/symbols.svg#icon-vesi"></use>
                 </svg>
             </a>
             <a href="index.html" class="logo">"Юридична сила"</a>
             <ul class="header_list">
-                <li class="header_item"><a href="index.html" class="header_link">Про нас</a></li>
-                <li class="header_item"><a href="index.html#our_services" class="header_link">Наші послуги</a></li>
+                <li class="header_item"><a href="index.html" class="header_link">О нас</a></li>
+                <li class="header_item"><a href="index.html#our_services" class="header_link">Наши услуги</a></li>
                 <li class="header_item"><a href="index.html#consult" class="header_link">Юрист онлайн</a></li>
-                <li class="header_item"><a href="index.html#feed_back" class="header_link">Відгуки</a></li>
-                <li class="header_item"><a href="index.html#footer" class="header_link">Контакти</a></li>
+                <li class="header_item"><a href="index.html#feed_back" class="header_link">Отзывы</a></li>
+                <li class="header_item"><a href="index.html#footer" class="header_link">Контакты</a></li>
             </ul>
             <ul class="header_icons">
                 <li><a href="viber://chat?number=380686980850" class="foot_item">
@@ -47,11 +47,11 @@
             <input id="burger" type="checkbox" class="menucheck">
             <label for="burger" class="navburger"></label>
             <ul class="burger_list">
-                <li class="burger_item"><a href="index.html" class="burger_link" onclick='brgrSwitch()'>Про нас</a></li>
-                <li class="burger_item"><a href="index.html#our_services" class="burger_link" onclick='brgrSwitch()'>Наші послуги</a></li>
+                <li class="burger_item"><a href="index.html" class="burger_link" onclick='brgrSwitch()'>О нас</a></li>
+                <li class="burger_item"><a href="index.html#our_services" class="burger_link" onclick='brgrSwitch()'>Наши услуги</a></li>
                 <li class="burger_item"><a href="index.html#consult" class="burger_link" onclick='brgrSwitch()'>Юрист онлайн</a></li>
-                <li class="burger_item"><a href="index.html#feed_back" class="burger_link" onclick='brgrSwitch()'>Відгуки</a></li>
-                <li class="burger_item"><a href="index.html#footer" class="burger_link" onclick='brgrSwitch()'>Контакти</a></li>
+                <li class="burger_item"><a href="index.html#feed_back" class="burger_link" onclick='brgrSwitch()'>Отзывы</a></li>
+                <li class="burger_item"><a href="index.html#footer" class="burger_link" onclick='brgrSwitch()'>Контакты</a></li>
                 <li class="burger_icons">
                     <ul class="icon_list">
                         <li><a href="viber://chat?number=380686980850" class="foot_item">
@@ -78,14 +78,14 @@
         </div>
         </header>
         <!-- dasj;lkasd;ljkdas;ljkasd;ljk;ljkasd;ljkasd -->
-        <div class="wrapper work_time">
+        <div class="wrapper work_time" id="work_time">
             <div class="time_table">
                 <div class="time_head">
                     <svg class="time_call">
                         <use href="./img/symbols.svg#icon-phone"></use>
                     </svg>
                     <div class="svg_text">
-                        <p class="time_text">Хочете отримати професійну допомогу?<br>Телефонуйте або напишіть нам з 8:00 до 22:00 щодня.</p>
+                        <p class="time_text">Хотите получить профессиональную помощь? <br>Звоните или пишите нам с 8:00 до 22:00 ежедневно.</p>
                     </div>
                 </div>
                 <div class="time_list">
@@ -96,77 +96,70 @@
                         <a href="tel:+380737770222" class="time_phone">+38 (073) 777-0-222</a>
                         <a href="tel:+380686980850" class="time_phone">+38 (068) 698-0-850</a>
                     </div>
-                    <a type="button" class="light_btn time_btn" onclick="modalOpen()">отримати допомогу</a>
+                    <a type="button" class="light_btn time_btn" onclick="modalOpen()">получить помощь</a>
                 </div>
             </div>
         </div>
         <div class="wrapper">
             <div class="aboutpage">
-                <h2 class="about_company">Послуги з земельного права</h2>
-                <!-- <h2 class="about_company">Питання, з якими до нас звертаються найчастіше:</h2>
-                <p class="text_standart">Юридична сила - молода українська компанія, яка була заснована в місті Одесі фахівцями <span>з багаторічним досвідом роботи у сфері юриспруденції</span>. Над створенням компанії працювали найкращі уми з усіх куточків нашої кра-їни. Ми зібрали справжніх "акул" у сфері права, які стоятимуть на боці наших клієнтів!</p>
-                <p class="text_standart">«Юридична Сила» створена в 2020 році. На сьогоднішній день, компа-нію представляють більше ніж 15 талановитих юристів, сфера практичної дія-льності яких охоплює всі галузі права.</p>
-                <p class="text_standart"><span>Наша компанія надає професійні та доступні послуги у сфері юрис-пруденції.</span></p>
-                <p class="text_standart">Вчасна юридична допомога — це важливо! Ми намагаємося надавати послуги адвокатів якнайшвидше, щоб не витрачати час своїх клієнтів. Вже
-                за 15 хвилин після звернення, у робочі години, ви отримаєте первинну юри-дичну поміч та відповіді на свої запитання.</p>
-                 -->
-                 <p class="about_head_text">Питання, з якими до нас звертаються найчастіше:</p>
+                <h2 class="about_company">Услуги земельного права</h2>
+                 <p class="about_head_text">Вопросы, с которыми к нам обращаются чаще всего:</p>
                  <ul class="about_list">
-                    <li class="about_list_item">Оцінка вигоди і ризиків;</li>
-                    <li class="about_list_item">Допомога в підготовці та зборі документів для захисту прав клієнта;</li>
-                    <li class="about_list_item">Рекомендації щодо законних способів вирішення спорів;</li>
-                    <li class="about_list_item">Письмові та усні консультації;</li>
-                    <li class="about_list_item">Розрив договору оренди земельної ділянки;</li>
-                    <li class="about_list_item">Порушення правил добросусідства;</li>
-                    <li class="about_list_item">Отримання земельної ділянки для учасників бойових дій;</li>
-                    <li class="about_list_item">Визначення права власності на земельну ділянку;</li>
-                    <li class="about_list_item">Визначення правил користування земельною ділянкою;</li>
-                    <li class="about_list_item">Передача майнових прав на земельні ділянки;</li>
-                    <li class="about_list_item">Поділ та визначення кордонів земельної ділянки;</li>
-                    <li class="about_list_item">Приватизація земельних ділянок;</li>
-                    <li class="about_list_item">Повний юридичний супровід;</li>
+                    <li class="about_list_item">Оценка выгоды и рисков;</li>
+                    <li class="about_list_item">Помощь в подготовке и сборе документов для защиты прав клиента;</li>
+                    <li class="about_list_item">Рекомендации относительно законных способов разрешения споров;</li>
+                    <li class="about_list_item">Письменные и устные консультации;</li>
+                    <li class="about_list_item">Разрыв договора аренды земельного участка;</li>
+                    <li class="about_list_item">Нарушение правил добрососедства;</li>
+                    <li class="about_list_item">Получение земельного участка для участников боевых действий;</li>
+                    <li class="about_list_item">Определение права собственности на земельный участок;</li>
+                    <li class="about_list_item">Определение правил пользования земельным участком;</li>
+                    <li class="about_list_item">Передача имущественных прав на земельные участки;</li>
+                    <li class="about_list_item">Раздел и определение границ земельного участка;</li>
+                    <li class="about_list_item">Приватизация земельных участков;</li>
+                    <li class="about_list_item">Полное юридическое сопровождение;</li>
                  </ul>
-                 <p class="about_text_bold">Ми працюємо з усіма справами та надаємо широкий спектр послуг з земельного права, які допоможуть захистити ваші інтереси!</p>
-                 <p class="about_red_text">Ми гарантуємо:</p>
+                 <p class="about_text_bold">Мы работаем со всеми делами и предоставляем широкий спектр услуг по земельному праву, которые помогут защитить ваши права!</p>
+                 <p class="about_red_text">Мы гарантируем:</p>
                  <ul class="about_list">
-                    <li class="about_list_item">Професіоналізм, якість, швидкість, та ефективність наданих послуг;</li>
-                    <li class="about_list_item">Роботу зі всіма питаннями пов’язаними зі сферою земельного права;</li>
-                    <li class="about_list_item">Реальний успішний та ефективний досвід розв’язування питань, пов’язаних з відстоюванням прав наших клієнтів;</li>
-                    <li class="about_list_item">Постійний зв’язок. Клієнти на зв’язку зі своїм спеціалістом 24/7 та отримують звіт виконаної роботи;</li>
+                    <li class="about_list_item">Профессионализм, качество, скорость и эффективность предоставляемых услуг;</li>
+                    <li class="about_list_item">Работу со всеми вопросами связанными со сферой земельного права;</li>
+                    <li class="about_list_item">Реальный, успешный и эффективный опыт решения вопросов, связанных с защитой прав наших клиентов;</li>
+                    <li class="about_list_item">Постоянная связь. Клиенты на связи со своим специалистом 24/7 и получают отчет о проделанной работе;</li>
                  </ul>
             </div>
         </div>
         <div class="wrapper accord">
             <div class="aboutpage_accordeon">
-                <h3 class="accord_head">Поширені запитання</h3>  
+                <h3 class="accord_head">Часто задаваемые вопросы</h3>  
                     <div class="accordeon_page">
                         <input class="accord_inp" type="radio" name="radio" id="radio1" checked="checked">
                         <label class="accord_lab" for="radio1">
-                            Чи можете ви допомогти з реєстрацією земельної ділянки
+                            Можете ли вы помочь с регистрацией земельного участка?
                         </label>
                         <div class="accordeon_text">
-                            <p class="text_standart">Так, послуги адвоката із земельних питань в компанії «Юридична Сила» включають і підготовку документів та допомогу у реєстрації земельних ділянок.</p>
+                            <p class="text_standart">Да, услуги адвоката по земельным вопросам в компании "Юридическая Сила" включают и подготовку документов, и помощь в регистрации земельных участков.</p>
                         </div>
                         <input class="accord_inp" type="radio" name="radio" id="radio2">
                         <label class="accord_lab" for="radio2">
-                            Чи можете ви допомогти з розв’язанням земельного питання в умовах воєнного стану?
+                            Можете ли вы помочь с решением земельного вопроса в условиях военного положения?
                         </label>
                         <div class="accordeon_text">
-                            <p class="text_standart">Так, ми будемо раді допомогти вам в будь-якому питанні у сфері земельного права. Запишіться на консультацію, і з вашою справою працюватиме найкращий фахівець у цій галузі права.</p>
+                            <p class="text_standart">Да, мы будем рады помочь вам в любом вопросе в сфере земельного права. Запишитесь на консультацию, с вашим делом будет работать лучший специалист в этой области права.</p>
                         </div>
                         <input class="accord_inp" type="radio" name="radio" id="radio3">
                         <label class="accord_lab" for="radio3">
-                            Що робити, якщо сусіди самовільно пересунули кордон земельної ділянки?
+                            Что делать, если соседи самовольно передвинули границу земельного участка?
                         </label>
                         <div class="accordeon_text">
-                            <p class="text_standart">Перш за все вам варто зібрати документи на землю, що встановлюють ваше право власності. Потім ви можете проконсультуватися з нашими адвокатами: ми вивчимо ситуацію, спробуємо вирішити суперечку в досудовому порядку (надамо послуги медіатора), або за необхідності — допоможемо звернутися до суду і досягти справедливого рішення.</p>
+                            <p class="text_standart">Прежде всего вам стоит собрать документы на землю, устанавливающие ваше право собственности. Затем вы можете проконсультироваться с нашими адвокатами: мы изучим ситуацию, попробуем решить спор в досудебном порядке (предоставим услуги медиатора), или при необходимости - поможем собрать пакет документов, обратиться в суд и достичь справедливого решения.</p>
                         </div>
                         <input class="accord_inp" type="radio" name="radio" id="radio4">
                         <label class="accord_lab" for="radio4">
-                            Чи надаєте ви допомогу в отриманні земельних паїв учасникам АТО?    
+                            Оказываете ли вы помощь в получении земельных паев участникам АТО?    
                         </label>
                         <div class="accordeon_text">
-                            <p class="text_standart">У компанії «Юридична Сила» працюють адвокати як із земельного права, так і фахівці з військового права. Ви можете отримати послуги адвоката і отримати належну вам по праву ділянку землі — а наша компанія допоможе вам у цьому.</p>
+                            <p class="text_standart">В компании "Юридическая Сила" работают адвокаты как по земельному праву, так и специалисты по военному праву. Вы можете получить услуги адвоката и получить положенный вам по праву участок земли, а наша компания поможет вам в этом.</p>
                         </div>
                     </div>           
             </div>
@@ -174,11 +167,11 @@
         <div class="wrapper form_blank">
             <div id="form" class="fblank">
                 <form id="tg" class="fblank_form">
-                    <input type="text" name="name" placeholder="Введіть П.І.Б." class="fblank_inp">
-                    <input type="tel" name="tel" placeholder="Введіть телефон" class="fblank_inp" pattern="[\+]\d{2}\[\(]\d{3}[\)]\\d{3}\d{2}\d{2}" minlength="5" maxlength="19" required>
-                    <textarea name="message" rows="5" maxlength="500" placeholder="Коротко опишіть проблему" class="fblank_area"></textarea>
+                    <input type="text" name="name" placeholder="Ваше Ф.И.О." class="fblank_inp">
+                    <input type="tel" name="tel" placeholder="Ваш номер телефона" class="fblank_inp" pattern="[\+]\d{2}\[\(]\d{3}[\)]\\d{3}\d{2}\d{2}" minlength="5" maxlength="19" required>
+                    <textarea name="message" rows="5" maxlength="500" placeholder="Кратко опишите проблему" class="fblank_area"></textarea>
                     <span class="fblank_span">
-                        <input type="submit" value="Замовити консультацію" class="fblank_subm light_btn">
+                        <input type="submit" value="Заказать консультацию" class="fblank_subm light_btn">
                     </span>
                 </form>
             </div>
@@ -187,7 +180,7 @@
 			<div class="adr_list" id="footer">
 				<div class="foot_text">
 					<h2>"Юридична сила"</h2>
-				<p>Ви можете приїхати до нас особисто і ми обговоримо на місці всі необхідні питання, які потребують негайного вирішення!</p>
+                    <p>Вы можете приехать к нам и лично обговорить на месте все необходимые вопросы, которые требуют немедленного вмешательства!</p>
 				</div>
 				<div class="foot_adress">
 					<address class="foot_adr">
@@ -221,14 +214,12 @@
         <div class="help_back" id="help_back">
             <div id="form" class="help_form" >
                 <form id="tg" class="help_group">
-                    <input type="text" name="name" placeholder="Введіть П.І.Б." class="help_input">
-                    <input type="tel" name="tel" placeholder="Введіть телефон" class="help_input" pattern="[\+]\d{2}\[\(]\d{3}[\)]\\d{3}\d{2}\d{2}" minlength="5" maxlength="19" required>
-                    <textarea name="message" rows="4" maxlength="500" placeholder="Коротко опишіть проблему" class="help_area"></textarea>
-                    <!-- <div id="success" class="alert" style="display: block">Сообщение отправлено</div> -->
+                    <input type="text" name="name" placeholder="Ваше Ф.И.О." class="help_input">
+                    <input type="tel" name="tel" placeholder="Ваш номер телефона" class="help_input" pattern="[\+]\d{2}\[\(]\d{3}[\)]\\d{3}\d{2}\d{2}" minlength="5" maxlength="19" required>
+                    <textarea name="message" rows="4" maxlength="500" placeholder="Кратко опишите проблему" class="help_area"></textarea>
                     <span class="help_span">
-                        <input type="submit" value="Відправити" class="light_btn">
+                        <input type="submit" value="Отправить" class="light_btn">
                     </span>
-                    <!-- без заголовка -->
                 </form>
                 <div class="help_exit" onclick="modalClose()"></div>
             </div>
@@ -236,10 +227,10 @@
         <!-- CONFIRM WONDOW -->
 		<div class="confirm" id="confirm">
 			<div class="confirm_field">
-				<p class="confirm_msg">Дякуємо Вам за довіру!
+				<p class="confirm_msg">Благодарим Вас за доверие!
 				</p>
-				<p class="confirm_msg">Очікуйте дзвінок протягом 15 хвилин.</p>
-				<a href="#head" class="confirm_link" onclick="unConfirmSend()">На головну</a>
+				<p class="confirm_msg">Ожидайте зводок на протяжении 15 минут.</p>
+				<a href="#head" class="confirm_link" onclick="unConfirmSend()">На главную</a>
 			</div>
 		</div>
 		<!-- ОТПРАВКА ФОРМЫ  -->

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="./css/flickity.css">
     <title>Юридична Сила</title>
 </head>
@@ -12,16 +12,16 @@
         <div class="menu">
             <a href="index.html" class="start">
                 <svg class="menu_logo">
-                    <use href="./img/symbols.svg#icon-vesi"></use>
+                    <use href="../img/symbols.svg#icon-vesi"></use>
                 </svg>
             </a>
             <a href="index.html" class="logo">"Юридична сила"</a>
             <ul class="header_list">
-                <li class="header_item"><a href="index.html" class="header_link">Про нас</a></li>
-                <li class="header_item"><a href="index.html#our_services" class="header_link">Наші послуги</a></li>
+                <li class="header_item"><a href="index.html" class="header_link">О нас</a></li>
+                <li class="header_item"><a href="index.html#our_services" class="header_link">Наши услуги</a></li>
                 <li class="header_item"><a href="index.html#consult" class="header_link">Юрист онлайн</a></li>
-                <li class="header_item"><a href="index.html#feed_back" class="header_link">Відгуки</a></li>
-                <li class="header_item"><a href="index.html#footer" class="header_link">Контакти</a></li>
+                <li class="header_item"><a href="index.html#feed_back" class="header_link">Отзывы</a></li>
+                <li class="header_item"><a href="index.html#footer" class="header_link">Контакты</a></li>
             </ul>
             <ul class="header_icons">
                 <li><a href="viber://chat?number=380686980850" class="foot_item">
@@ -47,11 +47,11 @@
             <input id="burger" type="checkbox" class="menucheck">
             <label for="burger" class="navburger"></label>
             <ul class="burger_list">
-                <li class="burger_item"><a href="index.html" class="burger_link" onclick='brgrSwitch()'>Про нас</a></li>
-                <li class="burger_item"><a href="index.html#our_services" class="burger_link" onclick='brgrSwitch()'>Наші послуги</a></li>
+                <li class="burger_item"><a href="index.html" class="burger_link" onclick='brgrSwitch()'>О нас</a></li>
+                <li class="burger_item"><a href="index.html#our_services" class="burger_link" onclick='brgrSwitch()'>Наши услуги</a></li>
                 <li class="burger_item"><a href="index.html#consult" class="burger_link" onclick='brgrSwitch()'>Юрист онлайн</a></li>
-                <li class="burger_item"><a href="index.html#feed_back" class="burger_link" onclick='brgrSwitch()'>Відгуки</a></li>
-                <li class="burger_item"><a href="index.html#footer" class="burger_link" onclick='brgrSwitch()'>Контакти</a></li>
+                <li class="burger_item"><a href="index.html#feed_back" class="burger_link" onclick='brgrSwitch()'>Отзывы</a></li>
+                <li class="burger_item"><a href="index.html#footer" class="burger_link" onclick='brgrSwitch()'>Контакты</a></li>
                 <li class="burger_icons">
                     <ul class="icon_list">
                         <li><a href="viber://chat?number=380686980850" class="foot_item">
@@ -78,14 +78,14 @@
         </div>
         </header>
         <!-- dasj;lkasd;ljkdas;ljkasd;ljk;ljkasd;ljkasd -->
-        <div class="wrapper work_time">
+        <div class="wrapper work_time" id="work_time">
             <div class="time_table">
                 <div class="time_head">
                     <svg class="time_call">
                         <use href="./img/symbols.svg#icon-phone"></use>
                     </svg>
                     <div class="svg_text">
-                        <p class="time_text">Хочете отримати професійну допомогу?<br>Телефонуйте або напишіть нам з 8:00 до 22:00 щодня.</p>
+                        <p class="time_text">Хотите получить профессиональную помощь? <br>Звоните или пишите нам с 8:00 до 22:00 ежедневно.</p>
                     </div>
                 </div>
                 <div class="time_list">
@@ -96,70 +96,63 @@
                         <a href="tel:+380737770222" class="time_phone">+38 (073) 777-0-222</a>
                         <a href="tel:+380686980850" class="time_phone">+38 (068) 698-0-850</a>
                     </div>
-                    <a type="button" class="light_btn time_btn" onclick="modalOpen()">отримати допомогу</a>
+                    <a type="button" class="light_btn time_btn" onclick="modalOpen()">получить помощь</a>
                 </div>
             </div>
         </div>
         <div class="wrapper">
             <div class="aboutpage">
-                <h2 class="about_company">Спори з банками та фінансовими установами</h2>
-                <!-- <h2 class="about_company">Питання, з якими до нас звертаються найчастіше:</h2>
-                <p class="text_standart">Юридична сила - молода українська компанія, яка була заснована в місті Одесі фахівцями <span>з багаторічним досвідом роботи у сфері юриспруденції</span>. Над створенням компанії працювали найкращі уми з усіх куточків нашої кра-їни. Ми зібрали справжніх "акул" у сфері права, які стоятимуть на боці наших клієнтів!</p>
-                <p class="text_standart">«Юридична Сила» створена в 2020 році. На сьогоднішній день, компа-нію представляють більше ніж 15 талановитих юристів, сфера практичної дія-льності яких охоплює всі галузі права.</p>
-                <p class="text_standart"><span>Наша компанія надає професійні та доступні послуги у сфері юрис-пруденції.</span></p>
-                <p class="text_standart">Вчасна юридична допомога — це важливо! Ми намагаємося надавати послуги адвокатів якнайшвидше, щоб не витрачати час своїх клієнтів. Вже
-                за 15 хвилин після звернення, у робочі години, ви отримаєте первинну юри-дичну поміч та відповіді на свої запитання.</p>
-                 -->
-                 <p class="about_head_text"></p>
+                <h2 class="about_company">Споры с банками и финансовыми учреждениями</h2>
+                 <p class="about_head_text">Вопросы, с которыми к нам обращаются чаще всего:</p>
                  <ul class="about_list">
-                    <li class="about_list_item">Погашення кредитів, списання відсотків, штрафів і пені;</li>
-                    <li class="about_list_item">Скасування виконавчого напису нотаріуса;</li>
-                    <li class="about_list_item">Відновлення кредитної історії або виключення особи з УБКІ;</li>
-                    <li class="about_list_item">Визнання кредитного договору нікчемним або недійсним та ін.;</li>
-                    <li class="about_list_item">Реструктуризація кредитної заборгованості;</li>
-                    <li class="about_list_item">Зняття арештів з банківських рахунків чи нерухомого майна;</li>
+                    <li class="about_list_item">Погашение кредитов, списание процентов, штрафов и пени;</li>
+                    <li class="about_list_item">Отмена исполнительной надписи нотариуса;</li>
+                    <li class="about_list_item">Восстановление кредитной истории или исключение лица из УБКИ;</li>
+                    <li class="about_list_item">Признание кредитного договора ничтожным или недействительным и др.;</li>
+                    <li class="about_list_item">Реструктуризация кредитной задолженности;</li>
+                    <li class="about_list_item">Снятие арестов с банковских счетов или движимого/недвижимого имущества;</li>
                  </ul>
-                 <p class="about_text_bold">Ми працюємо з усіма справами та надаємо широкий спектр послуг в спорах с банками, які допоможуть захистити ваші інтереси!</p>
-                 <p class="about_red_text">Ми гарантуємо:</p>
+                 <p class="about_text_bold">Мы работаем со всеми делами и предоставляем широкий спектр услуг в спорах с банками, которые помогут защитить ваши права!</p>
+                 <p class="about_red_text">Мы гарантируем:</p>
                  <ul class="about_list">
-                    <li class="about_list_item">Професіоналізм, якість, швидкість, та ефективність наданих послуг;</li>
-                    <li class="about_list_item">Роботу зі всіма питаннями пов’язаними зі сферою спорів з банками та фінансовими установами;</li>
-                    <li class="about_list_item">Реальний успішний та ефективний досвід розв’язування питань, пов’язаних з відстоюванням прав наших клієнтів;</li>
-                    <li class="about_list_item">Постійний зв’язок. Клієнти на зв’язку зі своїм спеціалістом 24/7 та отримують звіт виконаної роботи;</li>
+                    <li class="about_list_item">Профессионализм, качество, скорость и эффективность предоставляемых услуг;</li>
+                    <li class="about_list_item">Работу со всеми вопросами связанными со сферой споров с банками и финансовыми учреждениями;</li>
+                    <li class="about_list_item">Реальный, успешный и эффективный опыт решения вопросов, связанных с защитой прав наших клиентов;</li>
+                    <li class="about_list_item">Постоянная связь. Клиенты на связи со своим специалистом 24/7 и получают отчет о проделанной работе;</li>
                  </ul>
             </div>
         </div>
         <div class="wrapper accord">
             <div class="aboutpage_accordeon">
-                <h3 class="accord_head">Поширені запитання</h3>  
+                <h3 class="accord_head">Часто задаваемые вопросы</h3>  
                     <div class="accordeon_page">
                         <input class="accord_inp" type="radio" name="radio" id="radio1" checked="checked">
                         <label class="accord_lab" for="radio1">
-                            Чи можна виграти суперечку з банком?
+                            Можно ли выиграть спор с банком?
                         </label>
                         <div class="accordeon_text">
-                            <p class="text_standart">Так, це цілком реально, якщо на вашому боці є кваліфікований адвокат, який має досвід ведення подібних справ. У компанії «Юридична Сила» ви можете отримати підтримку такого фахівця для вирішення спорів із банком.</p>
+                            <p class="text_standart">Да, это вполне реально, если на вашей стороне есть квалифицированный адвокат, который имеет опыт ведения подобных дел. В компании "Юридическая Сила" вы можете получить поддержку такого специалиста для решения споров с банком.</p>
                         </div>
                         <input class="accord_inp" type="radio" name="radio" id="radio2">
                         <label class="accord_lab" for="radio2">
-                            Що робити, якщо суд зобов'язав мене виплачувати борг банку, але я не маю такої можливості.
+                            Что делать, если суд обязал меня выплачивать долг банку, но я не имею такой возможности?
                         </label>
                         <div class="accordeon_text">
-                            <p class="text_standart">Вам знадобляться послуги адвоката. Зверніться до нас, щоб отримати детальну консультацію та правову допомогу в оскарженні рішення суду, реструктуризації боргу чи інших рішеннях, які захистять ваші інтереси.</p>
+                            <p class="text_standart">Вам понадобятся услуги адвоката. Обратитесь к нам, чтобы получить подробную консультацию и правовую помощь в обжаловании решения суда, реструктуризации долга или других решений, которые защитят ваши интересы.</p>
                         </div>
                         <input class="accord_inp" type="radio" name="radio" id="radio3">
                         <label class="accord_lab" for="radio3">
-                            Чи може адвокат допомогти мені покращити кредитну історію?
+                            Может ли адвокат помочь мне улучшить кредитную историю?
                         </label>
                         <div class="accordeon_text">
-                            <p class="text_standart">Якщо ваша кредитна історія вже містить негативний досвід взаємодії з фінансовими установами, допомога адвоката буде доречною для того, щоб виправити ситуацію в перспективі. Також варто заздалегідь проконсультуватися з адвокатом, якщо ви тільки плануєте звернутися за позикою або іпотекою - він допоможе виробити стратегію, за якої ваша кредитна історія залишиться чистою.</p>
+                            <p class="text_standart">Если ваша кредитная история уже содержит негативный опыт взаимодействия с финансовыми учреждениями, помощь адвоката будет уместна для того, чтобы исправить ситуацию в перспективе. Также стоит заранее проконсультироваться с адвокатом, если вы только планируете оформить кредит, договор займа или ипотеку - он поможет выработать стратегию, при которой ваша кредитная история останется чистой.</p>
                         </div>
                         <input class="accord_inp" type="radio" name="radio" id="radio4">
                         <label class="accord_lab" for="radio4">
-                            Чи можуть бути вирішені кредитні спори без суду?
+                            Можно ли решить кредитные споры без суда?
                         </label>
                         <div class="accordeon_text">
-                            <p class="text_standart">Звісно, можуть! Саме це є головним завданням нашого адвоката.</p>
+                            <p class="text_standart">Конечно, можно! Именно это является главной задачей нашей компании.</p>
                         </div>
                     </div>           
             </div>
@@ -167,11 +160,11 @@
         <div class="wrapper form_blank">
             <div id="form" class="fblank">
                 <form id="tg" class="fblank_form">
-                    <input type="text" name="name" placeholder="Введіть П.І.Б." class="fblank_inp">
-                    <input type="tel" name="tel" placeholder="Введіть телефон" class="fblank_inp" pattern="[\+]\d{2}\[\(]\d{3}[\)]\\d{3}\d{2}\d{2}" minlength="5" maxlength="19" required>
-                    <textarea name="message" rows="5" maxlength="500" placeholder="Коротко опишіть проблему" class="fblank_area"></textarea>
+                    <input type="text" name="name" placeholder="Ваше Ф.И.О." class="fblank_inp">
+                    <input type="tel" name="tel" placeholder="Ваш номер телефона" class="fblank_inp" pattern="[\+]\d{2}\[\(]\d{3}[\)]\\d{3}\d{2}\d{2}" minlength="5" maxlength="19" required>
+                    <textarea name="message" rows="5" maxlength="500" placeholder="Кратко опишите проблему" class="fblank_area"></textarea>
                     <span class="fblank_span">
-                        <input type="submit" value="Замовити консультацію" class="fblank_subm light_btn">
+                        <input type="submit" value="Заказать консультацию" class="fblank_subm light_btn">
                     </span>
                 </form>
             </div>
@@ -180,7 +173,7 @@
 			<div class="adr_list" id="footer">
 				<div class="foot_text">
 					<h2>"Юридична сила"</h2>
-				<p>Ви можете приїхати до нас особисто і ми обговоримо на місці всі необхідні питання, які потребують негайного вирішення!</p>
+                    <p>Вы можете приехать к нам и лично обговорить на месте все необходимые вопросы, которые требуют немедленного вмешательства!</p>
 				</div>
 				<div class="foot_adress">
 					<address class="foot_adr">
@@ -211,29 +204,29 @@
 				</div>
 			</div>
 		</footer>
-       <div class="help_back" id="help_back">
+        <div class="help_back" id="help_back">
             <div id="form" class="help_form" >
                 <form id="tg" class="help_group">
-                    <input type="text" name="name" placeholder="Введіть П.І.Б." class="help_input">
-                    <input type="tel" name="tel" placeholder="Введіть телефон" class="help_input" pattern="[\+]\d{2}\[\(]\d{3}[\)]\\d{3}\d{2}\d{2}" minlength="5" maxlength="19" required>
-                    <textarea name="message" rows="4" maxlength="500" placeholder="Коротко опишіть проблему" class="help_area"></textarea>
-                    <!-- <div id="success" class="alert" style="display: block">Сообщение отправлено</div> -->
+                    <input type="text" name="name" placeholder="Ваше Ф.И.О." class="help_input">
+                    <input type="tel" name="tel" placeholder="Ваш номер телефона" class="help_input" pattern="[\+]\d{2}\[\(]\d{3}[\)]\\d{3}\d{2}\d{2}" minlength="5" maxlength="19" required>
+                    <textarea name="message" rows="4" maxlength="500" placeholder="Кратко опишите проблему" class="help_area"></textarea>
                     <span class="help_span">
-                        <input type="submit" value="Відправити" class="light_btn">
+                        <input type="submit" value="Отправить" class="light_btn">
                     </span>
-                    <!-- без заголовка -->
                 </form>
                 <div class="help_exit" onclick="modalClose()"></div>
             </div>
         </div>
         <!-- CONFIRM WONDOW -->
 		<div class="confirm" id="confirm">
-			<div class="confirm_field">
-				<p class="confirm_msg">Дякуємо Вам за довіру!
-				</p>
-				<p class="confirm_msg">Очікуйте дзвінок протягом 15 хвилин.</p>
-				<a href="#head" class="confirm_link" onclick="unConfirmSend()">На головну</a>
-			</div>
+			<div class="confirm" id="confirm">
+                <div class="confirm_field">
+                    <p class="confirm_msg">Благодарим Вас за доверие!
+                    </p>
+                    <p class="confirm_msg">Ожидайте зводок на протяжении 15 минут.</p>
+                    <a href="#head" class="confirm_link" onclick="unConfirmSend()">На главную</a>
+                </div>
+            </div>
 		</div>
        <!-- ОТПРАВКА ФОРМЫ  -->
 	<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
