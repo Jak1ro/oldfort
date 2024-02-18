@@ -102,3 +102,20 @@ document.getElementById('tg').addEventListener('submit', function (e) {
       console.log('End');
     })
 })
+
+
+//TRANSLATE
+
+const lang = document.querySelector('.lang_select');
+
+function translateMenu() {
+    lang.classList.toggle('active');
+}
+
+// TRANSLATEMOBILE
+
+const langMob = document.querySelector('.langmob_select');
+
+function translateMenuMob() {
+    langMob.classList.toggle('active');
+}
