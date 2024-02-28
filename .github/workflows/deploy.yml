@@ -13,8 +13,8 @@ jobs:
       # Setup key
       - run: set -eu
       - run: mkdir "$HOME/.ssh"
-      - run: echo "${{ secrets.yursyla }}" > "$HOME/.ssh/yursyla"
-      - run: chmod 600 "$HOME/.ssh/yursyla"
+      - run: echo "${{ secrets.key }}" > "$HOME/.ssh/key"
+      - run: chmod 600 "$HOME/.ssh/key"
       # Deploy
-      - run: rsync -e "ssh -p 20022 -i $HOME/.ssh/yursyla -o StrictHostKeyChecking=no" --archive --compress --delete . /home/yursyla/yursyla.com.ua/www/
+      - run: rsync -e "ssh -p 20022 -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . ssh yursyla@yursyla.ftp.tools
       
