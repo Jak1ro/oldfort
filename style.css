@@ -32,6 +32,10 @@ html {
 
 body {
 	background-color: var(--sec-text-col);
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
 }
 
 a {
