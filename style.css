@@ -441,8 +441,8 @@ header {
 
 .hero {
 	height: 100vh;
-	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(./img/hero-img-05.jpg);
-	background-image: linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(./img/hero-img-05.jpg);
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(./img/hero-img-05.jpg);
+	background-image: linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(./img/hero-img-05.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	-moz-background-size: cover;
@@ -574,23 +574,23 @@ header {
 .consult_discount {
 	margin: 0 auto;
 	padding: 12px;
-	width: 80%;
-	display: flex;
+	/* width: 80%; */
+	/* display: flex;
 	align-items: center;
-	justify-content: center;
-	-webkit-transform: skew(-20deg);
+	justify-content: center; */
+	/* -webkit-transform: skew(-20deg);
 	-moz-transform: skew(-20deg);
-	-o-transform: skew(-20deg);
-	transform: skew(-20deg);
-	background: var(--accent-col);
+	-o-transform: skew(-20deg); */
+	/* transform: skew(-20deg);
+	background: var(--accent-col); */
 }
 
-.discount_text {
+.consult_discount .discount_text {
 	text-align: center;
 	cursor: default;
 	font-weight: 600;
-	font-size: 20px;
-	display: inline-block;
+	font-size: 23px;
+	color: var(--accent-col);
 }
 
 .discount_text span {
@@ -883,8 +883,8 @@ svg.icon {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(./img/hero-img-02.jpg);
-	background-image: linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(./img/hero-img-02.jpg);
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(./img/hero-img-02.jpg);
+	background-image: linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(./img/hero-img-02.jpg);
 	/* background-color: var(--third-bg-col); */
 }
 
@@ -1412,9 +1412,9 @@ footer {
 	background-color: var(--main-bg-col);
 }
 
-.fblank {
+/* .fblank {
 
-}
+} */
 
 .fblank_form {
 	display: flex;
