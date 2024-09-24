@@ -2,6 +2,12 @@ const burger = document.getElementById('burger');
 const confirm = document.getElementById('confirm');
 const bodyPage = document.querySelector('body');
 const helpBack = document.getElementById('help_back');
+
+// Google Tag Manager
+
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5NN2P6RW');
+
 // HAMBURG START
 
 function brgrSwitch() {
@@ -88,18 +94,17 @@ document.getElementById('tg').addEventListener('submit', function (e) {
         this.name.value = '';
         this.tel.value = '';
         this.message.value = '';
-				bodyPage.classList.remove('no_scroll');
-				helpBack.style.display = 'none';
-        // success.innerHTML = 'Сообщение отправлено';
-        // success.style.display = 'block';
-		
+        console.log('confirm (для нас)');
+		bodyPage.classList.remove('no_scroll');
+		helpBack.style.display = 'none';
+        		
     })
     .catch((err) => {
         console.log(err);
     }) 
     .finally(() => {
-			confirmSend();
-      console.log('End');
+	    confirmSend();
+        console.log('End');
     })
 })
 

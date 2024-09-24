@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/flickity.css">
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-5NN2P6RW');
-	</script>
     <title>Юридична Сила</title>
     <link rel="apple-touch-icon" sizes="57x57" href="./ico/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="./ico/apple-icon-60x60.png">
@@ -135,7 +131,8 @@
                         <a href="tel:+380737770222" class="time_phone">+38 (073) 777-0-222</a>
                         <a href="tel:+380686980850" class="time_phone">+38 (068) 698-0-850</a>
                     </div>
-                    <a type="button" class="light_btn time_btn" onclick="modalOpen()">отримати допомогу</a>
+                    <!-- <a type="button" class="light_btn time_btn" onclick="modalOpen()">отримати допомогу</a> -->
+                    <a href="#form" type="button" class="light_btn time_btn" >отримати допомогу</a>
                 </div>
             </div>
         </div>
@@ -230,8 +227,9 @@
 				</div>
 			</div>
 		</footer>
+        <!-- FORM WINDOW -->
         <div class="help_back" id="help_back">
-            <div id="form" class="help_form" >
+            <div class="help_form" >
                 <form id="tg" class="help_group">
                     <input type="text" name="name" placeholder="Введіть П.І.Б." class="help_input">
                     <input type="tel" name="tel" placeholder="Введіть телефон" class="help_input" pattern="[\+]\d{2}\[\(]\d{3}[\)]\\d{3}\d{2}\d{2}" minlength="5" maxlength="19" required>
@@ -243,7 +241,7 @@
                 <div class="help_exit" onclick="modalClose()"></div>
             </div>
         </div>
-        <!-- CONFIRM WONDOW -->
+        <!-- CONFIRM WINDOW -->
 		<div class="confirm" id="confirm">
 			<div class="confirm_field">
 				<p class="confirm_msg">Дякуємо Вам за довіру!
