@@ -734,8 +734,13 @@ svg.icon {
 	width: 100;
 	background-color: var(--main-bg-col);
 	text-align: center;
-	box-shadow: var(--box-card-shadow);
+	border: 1px solid var(--border-col);
 	border-radius: 0 0 4px 4px;
+	transition: var(--transit);
+}
+
+.staff-item:hover, .staff-item:focus {
+	box-shadow: var(--box-card-shadow);
 }
 
 .staff-pic {
@@ -744,6 +749,7 @@ svg.icon {
 
 .staff-cell {
 	padding: 0 20px 20px;
+	min-height: 300px;
 }
 
 .staff-name {
@@ -1098,7 +1104,16 @@ footer {
 	padding: 20px 26px 40px;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	gap: 20px;
+}
+
+.adr_map {
+	width: 100%;
+}
+
+iframe {
+	width: 100%;
 }
 
 .foot_text h2 {
@@ -1115,6 +1130,7 @@ footer {
 }
 
 .foot_adress {
+	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
@@ -1167,13 +1183,13 @@ footer {
 @media (min-width: 768px) {
 	.adr_list {
 		flex-direction: row;
+		align-items: flex-end;
 	}
-	.foot_text, .foot_adress {
+	.adr_list_wrap, .adr_map {
 		width: calc((100% - 20px) / 2);
 	}
 	.foot_adress {
-		align-items: end;
-		justify-content: space-between;
+		align-items: flex-start;
 	}
 }
 
