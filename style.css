@@ -768,7 +768,7 @@ svg.icon {
 
 .staff-desc {
 	margin-top: 20px;
-	text-align: justify;
+	/* text-align: left; */
 }
 
 @media (max-width: 767px) {
@@ -1110,6 +1110,13 @@ footer {
 
 .adr_map {
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.adr_map_link {
+	color: var(--main-bg-col);
 }
 
 iframe {
