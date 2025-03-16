@@ -5,7 +5,7 @@
 	--main-text-col: #212121;
 	--sec-bg-col: #FFEBD9;
 	--accent-col: #E4A828;
-	/* --accent-col: #F27B3F; */
+	--btnaccent-col: #F27B3F;
 	--sec-text-col: #06071A;
 	--third-bg-col: #F5F4FA;
 	--accord-bgcolor: #E3E2E1;
@@ -32,10 +32,10 @@ html {
 
 body {
 	background-color: var(--sec-text-col);
-	/* -ms-user-select: none; 
+	-ms-user-select: none; 
 	-moz-user-select: none; 
 	-webkit-user-select: none; 
-	user-select: none;  */
+	user-select: none; 
 }
 
 a {
@@ -514,7 +514,7 @@ header {
 	display: inline-block;
 	margin-top: 20px;
 	padding: 12px 22px;
-	background-color: var(--accent-col);
+	background-color: var(--btnaccent-col);
 	color: var(--main-bg-col);
 	text-transform: uppercase;
 	font-weight: 500;
