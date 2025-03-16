@@ -1115,6 +1115,13 @@ footer {
 	gap: 20px;
 }
 
+.foot_adr p, .adr_map p {
+	color: var(--accent-col);
+	font-weight: 500;
+	font-size: 1.2em;
+	font-style: normal;
+}
+
 .adr_map_link {
 	color: var(--main-bg-col);
 }
