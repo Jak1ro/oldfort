@@ -563,6 +563,15 @@ header {
 	gap: 20px;
 }
 
+.consult-list {
+	color: var(--main-bg-col);
+	list-style-type: disc;
+}
+
+.consult-list li {
+	line-height: 1.4;
+}
+
 .section_grid, .services {
 	/* padding-bottom: 40px; */
 	display: flex;
@@ -663,6 +672,12 @@ header {
 .text_standart span {
 	font-weight: 700;
 }
+
+.why-me li {
+	list-style-type: disc;
+}
+
+
 
 .about_info {
 	display: flex;
@@ -1492,6 +1507,10 @@ iframe {
 	margin-bottom: 20px;
 }
 
+.otstup {
+	margin-top: 20px;
+}
+
 .about_red_text {
 	font-weight: 600;
 	margin-bottom: 14px;
@@ -1499,7 +1518,7 @@ iframe {
 	font-size: 22px;
 }
 
-.about_list {
+.about_list, .romb, .why-me {
 	margin-left: 20px;
 	list-style: disc;
 }
@@ -1509,8 +1528,11 @@ iframe {
 	font-size: 18px;
 }
 
+.romb li {
+	list-style-type: square;
+}
+
 .about_text_bold {
-	font-weight: 600;
 	font-size: 22px;
 	text-align: center;
 	margin-bottom: 20px;
